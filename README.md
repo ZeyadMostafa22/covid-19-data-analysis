@@ -29,7 +29,7 @@ This project analyzes COVID-19 cases and deaths in California counties using pub
 1. Clone the repository:
 
 ```bash
-git clone <your-repository-link>
+git clone https://github.com/ZeyadMostafa22/covid-19-data-analysis.git
 ```
 
 2. Install required libraries:
