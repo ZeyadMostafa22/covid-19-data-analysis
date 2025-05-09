@@ -1,70 +1,55 @@
-% COVID-19 Data Analysis Project
-\name{COVID-19 Data Analysis Project}
-\alias{COVID-19 Data Analysis}
-\title{COVID-19 Data Analysis Project}
-\description{
-  Welcome to the COVID-19 Data Analysis Project! 
-  This project provides an in-depth analysis of COVID-19 cases and deaths across counties in California, using data from Johns Hopkins University CSSE.
-}
+# COVID-19 Data Analysis 🚀
 
-\details{
-  \strong{Project Overview:}
-  This project provides a detailed analysis of the pandemic's impact on California counties. By leveraging data from Johns Hopkins University CSSE, this analysis helps you:
-  
-  - Understand the spread of COVID-19 in different counties.
-  - Compare case and death rates between counties.
-  - Track trends using time-series and 7-day moving averages.
-  
-  \strong{Features:}
-  - Data Cleaning & Preprocessing: Ensures data integrity by handling missing and erroneous values.
-  - Population Normalization: Calculates cases and deaths per million for fair comparison.
-  - 7-Day Moving Average: Smooths data for clearer trend visualization.
-  - Top Counties Analysis: Easily view the top 10 counties by case and death rates.
-  - Interactive Visualization: Modify counties or the number of top counties directly from the code.
-}
+## 🌐 Project Overview
 
-\usage{
-  \strong{Installation:}
-  1. Clone the Repository:
-     \code{git clone https://github.com/your-username/covid-19-data-analysis.git}
-     \code{cd covid-19-data-analysis}
-  
-  2. Install Required Packages:
-     \code{pip install -r requirements.txt}
-  
-  3. Run the Project:
-     - Ensure you have access to the required data files.
-     - Open the Jupyter Notebook:
-     \code{jupyter notebook covid-19-data-analysis.ipynb}
-}
+This project analyzes COVID-19 cases and deaths in California counties using publicly available datasets. The analysis focuses on data cleaning, normalization per population, and anomaly correction for accurate insights.
 
-\examples{
-  \strong{Usage:}
-  
-  \strong{Analyzing Specific Counties:}
-  Modify the list of counties for analysis:
-  \code{
-  selected_counties <- c("Alameda", "San Francisco", "San Mateo", "Santa Clara")
-  }
-  
-  \strong{Viewing Top Counties:}
-  Visualize the top 10 counties by cases per million:
-  \code{
-  plot_data(cases_pm_7d, "Top 10 Counties by 7-Day Avg New Cases Per Million", top_n=10)
-  }
-  
-  \strong{Available Visualizations:}
-  - Total Cases & Deaths: View cumulative counts.
-  - 7-Day Average New Cases & Deaths: See trends without daily fluctuations.
-  - Per Million Analysis: Compare normalized data across counties.
-}
+## 📊 Data Sources
 
-\references{
-  \strong{Data Sources:}
-  - COVID-19 Case and Death Data: \href{https://github.com/CSSEGISandData/COVID-19}{Johns Hopkins University CSSE}
-  - California Population Data: \href{https://gist.github.com/Nillsf}{Gist by Nillsf}
-}
+* COVID-19 Cases and Deaths: [Johns Hopkins University CSSE COVID-19 Dataset](https://github.com/CSSEGISandData/COVID-19)
+* Population Data: [California Population Data](https://gist.github.com/Nillsf/7923a8c7f27ca98ec75b7e1529f259bb)
 
-\keyword{COVID-19}
-\keyword{Data Analysis}
-\keyword{Visualization}
+## ⚡️ Features
+
+* ✅ Clean and well-structured code
+* ✅ Data normalization per million for accurate comparisons
+* ✅ Automatic anomaly detection and correction
+* ✅ Interactive visualizations of COVID-19 trends
+
+## 🚀 Analysis Steps
+
+1. 📥 Data Loading and Initial Exploration
+2. 🧹 Data Cleaning and Transformation
+3. 📊 Normalization Per Million (Population)
+4. 🚨 Anomaly Detection and Correction
+5. 📈 Visualization of COVID-19 Trends
+
+## 🚀 Usage
+
+1. Clone the repository:
+
+```bash
+git clone <your-repository-link>
+```
+
+2. Install required libraries:
+
+```bash
+pip install pandas matplotlib
+```
+
+3. Run the notebook in Jupyter or any Python environment.
+
+## 📌 Customization
+
+* Modify the list of `selected_counties` for customized analysis.
+* Adjust the anomaly detection method in the `fix_anomalies` function.
+* Explore other states by changing the `state` parameter in the `clean_data` function.
+
+## 📝 License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute.
+
+## ⭐️ Acknowledgments
+
+* Special thanks to [Johns Hopkins University CSSE](https://github.com/CSSEGISandData/COVID-19) for providing the COVID-19 dataset.
